@@ -7,6 +7,15 @@
 - 软件包相关配置
 
 ## 1. 个人偏好软件包
+- Side Bar
+- Anaconda
+- Git
+- Gitgutter
+- Emmet
+- Sublimelinter
+- Djaneiro
+- Pylinter
+
 ## 2. 默认的软件配置
 ## 3. 默认的键盘映射配置
 ## 4. 软件包相关配置
