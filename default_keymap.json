@@ -1,0 +1,56 @@
+[
+//j+j to exit command mode
+	{
+	"keys":["j","j"],
+	"command": "exit_insert_mode",
+	"context":
+		[
+			{"key":"setting.command_mode","operand":false},
+			{"key":"setting.is_widget","operand":false}
+		]
+	},
+
+// k+k to exit command mode
+	{
+	"keys":["k","k"],
+	"command": "exit_insert_mode",
+	"context":
+		[
+			{"key":"setting.command_mode","operand":false},
+			{"key":"setting.is_widget","operand":false}
+		]
+	},
+
+
+//tab to jump closing bracket
+	{
+
+		"keys":["tab"],
+		"command":"move",
+		"args":{
+			"by":"characters",
+			"forward":true
+		},
+		"context":[
+			{
+				"key":"following_text","operator":"regex_contains","operand":"^[)'}\"\\]]","match_all":true	
+			},
+			{
+				"key":"auto_complete_visible","operator":"equal","operand":false
+			}
+		]
+	},
+
+// ,+b to move to the beginning of line
+	{ "keys": [",","b"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+//,+e move to the end of line
+	{ "keys": [",","e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+//,+q close the file
+	{ "keys": [",","q"], "command": "close" },
+//,+w to save file	
+	{ "keys": [",","w"], "command": "save" },
+
+	{"keys": ["ctrl+h"],"command":"prev_view"},
+
+	{"keys":["ctrl+l"], "command": "next_view"}
+]

@@ -1,0 +1,19 @@
+{
+	"auto_complete_selector": ".",
+	"auto_complete_triggers":
+	[
+		{
+			"characters": ".",
+			"selector": "source.python"
+		}
+	],
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/SublimeLinter/Solarized (Dark) (SL).tmTheme",
+	"font_face": "ubuntu mono",
+	"font_size": 10.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages": [],
+	"line_padding_bottom": 0.5,
+	"line_padding_top": 0.5
+}
